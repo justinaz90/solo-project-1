@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Satisfy&display=swap');
+
 /* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
+$color-black: #000000;
+$color-dark-grey: #333333;
+$color-grey: #979797;
+$color-light-grey: #E3E3E3;
+$background-color: #F5F5F2;
+$color-dark-orange: #F58220;
+$color-orange: #FFA200;
+$color-dark-green: #04AE00;
+$color-green: #74B67A;
+$color-light-green: #96CC9B;
+$color-dark-pink: #DE5252;
+$color-pink: #EC7171;
+$color-blue: #56819F;
+$color-red: #ff0000;
 
 /* Font sizes */
 $paragraph-font-size: 16px;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$logo-font: 'Satisfy', cursive;
+$paragraph-font: 'Roboto', sans-serif;
+
