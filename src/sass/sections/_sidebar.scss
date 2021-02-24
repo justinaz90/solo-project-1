@@ -5,6 +5,8 @@
   position: fixed;
   height: 100vh;
   float: left;
+  padding-left: 0;
+  width: 100%;
 }
 
 .sidebar-logo {
@@ -15,22 +17,27 @@
     font-size: 23px;
     color: $color-light-grey;
     display: inline-block;
+    padding-left: 20px;
   }
 
-  i {
+  a {
     color: $color-grey;
     padding-left: 30px;
+
+    &:hover {
+      color: $color-white;
+    }
   }
 }
 
 .sidebar-menu {
   .sidebar-menu-list {
-    padding-left: 10px;
-    position: relative;
+    padding-left: 0;
 
     li {
       height: 40px;
       font-size: 0px;
+      padding: 10px 20px;
 
       a {
         color: $color-grey;
@@ -42,8 +49,21 @@
       .icon-sidebar {
         height: 15px;
         width: 15px;
-        filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+        filter: invert(60%) sepia(0%) saturate(380%) hue-rotate(153deg) brightness(99%) contrast(103%);
         margin-right: 20px;
+      }
+
+      &:hover {
+        background: $color-dark-grey;
+        border-left: 5px solid $color-dark-orange;
+
+        a {
+          color: $color-white;
+        }
+
+        .icon-sidebar {
+          filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(120deg) brightness(105%) contrast(101%);
+        }
       }
     }
   }
@@ -58,12 +78,13 @@
     h2 {
       font-size: 14px;
       font-weight: 500;
-      padding-bottom: 7px;
+      padding-left: 15px;
     }
 
     .manager-profile {
       display: flex;
       align-items: center;
+      padding-left: 15px;
 
       img {
         height: 42px;
@@ -78,6 +99,10 @@
         color: $color-blue;
         font-size: 14px;
         font-weight: 300;
+      }
+
+      a:hover {
+        color: $color-white;
       }
     }
   }

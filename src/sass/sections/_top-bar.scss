@@ -49,5 +49,9 @@
         height: 14px;
       }
     }
+
+    &:hover {
+      background: $background-color;
+    }
   }
 }
