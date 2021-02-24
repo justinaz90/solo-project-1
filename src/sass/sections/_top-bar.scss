@@ -1,0 +1,53 @@
+.top-bar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: $paragraph-font;
+  font-weight: 300;
+  max-height: 60px;
+  border: 1px solid $color-light-grey;
+  background: $color-white;
+  width: 100%;
+
+  ul {
+    height: 100%;
+    display: flex;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid $color-light-grey;
+    padding: 0 15px;
+
+    .user-profile {
+      font-size: 13px;
+      color: $color-blue;
+    }
+
+    .icon-top-bar {
+      height: 17px;
+      filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+    }
+
+    a {
+      font-size: 18px;
+      text-decoration: none;
+      color: $color-grey;
+
+      .wallet, .profile {
+        padding-right: 15px;
+      }
+
+      .arrow-down {
+        height: 8px;
+        padding-left: 15px;
+      }
+
+      .quit {
+        height: 14px;
+      }
+    }
+  }
+}

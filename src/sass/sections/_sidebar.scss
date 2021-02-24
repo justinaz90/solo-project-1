@@ -3,6 +3,8 @@
   font-family: $paragraph-font;
   color: $color-grey;
   position: fixed;
+  height: 100vh;
+  float: left;
 }
 
 .sidebar-logo {
@@ -22,8 +24,6 @@
 }
 
 .sidebar-menu {
-
-
   .sidebar-menu-list {
     padding-left: 10px;
     position: relative;
@@ -37,13 +37,13 @@
         font-size: 14px;
         font-weight: 300;
         text-decoration: none;
+      }
 
-        .icon-sidebar {
-          height: 15px;
-          width: 15px;
-          filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
-          margin-right: 20px;
-        }
+      .icon-sidebar {
+        height: 15px;
+        width: 15px;
+        filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+        margin-right: 20px;
       }
     }
   }
