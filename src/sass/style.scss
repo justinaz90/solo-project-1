@@ -4,11 +4,15 @@
 @import 'layout';
 
 /* Components */
-// import "components/form_field";
+@import 'components/dot';
+@import 'components/section-title';
+@import 'components/date-selection';
+@import 'components/btn';
 
 /* Sections */
 @import 'sections/sidebar';
 @import 'sections/top-bar';
+@import 'sections/main-content.scss';
 
 /* Pages / Views */
 // import "pages/registration";

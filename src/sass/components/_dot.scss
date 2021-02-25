@@ -1,0 +1,25 @@
+.dot-chart {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-activity {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-orange {
+  background-color: $color-dark-orange;
+}
+
+.dot-blue {
+  background-color: $color-blue;
+}
+
+.dot-green {
+  background-color: $color-dark-green;
+}

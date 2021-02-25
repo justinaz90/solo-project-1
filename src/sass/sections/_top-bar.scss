@@ -50,6 +50,14 @@
       }
     }
 
+    .dot-activity {
+      position: relative;
+      right: 12px;
+      bottom: 11px;
+      height: 7px;
+      width: 7px;
+    }
+
     &:hover {
       background: $background-color;
     }
