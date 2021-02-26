@@ -1,6 +1,6 @@
 .dot-chart {
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   display: inline-block;
 }
@@ -17,7 +17,7 @@
 }
 
 .dot-blue {
-  background-color: $color-blue;
+  background-color: $color-light-blue;
 }
 
 .dot-green {

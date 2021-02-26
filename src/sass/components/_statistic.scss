@@ -1,0 +1,35 @@
+.statistic {
+  padding: 30px 100px;
+
+  .stats {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-light-grey;
+    width: 220px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+
+    h4 {
+      font-family: $paragraph-font;
+      font-size: 16px;
+      font-weight: 500;
+      color: $color-grey;
+      float: left;
+      margin: 0 auto;
+    }
+
+    p {
+      font-family: $paragraph-font;
+      font-size: 16px;
+      font-weight: 300;
+      color: $color-dark-grey;
+      float: right;
+      margin: 0 auto;
+    }
+  }
+
+  .stats:nth-of-type(even){
+    margin-left: 60px;
+  }
+}
