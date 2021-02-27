@@ -1,0 +1,69 @@
+.button-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.links {
+  padding: 30px 100px 0px 100px;
+}
+
+.single-link {
+  display: inline-block;
+  align-items: center;
+  width: 540px;
+  border-bottom: 1px solid $color-light-grey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &:first-of-type {
+    border-top: 1px solid $color-light-grey;
+  }
+
+  &:hover {
+    background-color: $background-color;
+  }
+
+  h4 {
+    font-family: $paragraph-font;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-grey;
+    float: left;
+    margin: 0 auto;
+    width: 200px;
+    padding-left: 15px;
+  }
+
+  .website {
+    font-family: $paragraph-font;
+    font-size: 16px;
+    font-weight: 100;
+    color: $color-blue;
+    text-decoration: none;
+    width: 270px;
+    float: left;
+
+    &:hover {
+      font-weight: 300;
+    }
+  }
+
+  a {
+    width: 30px;
+    float: left;
+  }
+
+  .icon {
+    height: 15px;
+    width: 15px;
+  }
+
+  .icon-links:hover {
+    filter: invert(51%) sepia(86%) saturate(826%) hue-rotate(348deg) brightness(100%) contrast(93%);
+  }
+
+  .icon-trash:hover {
+    filter: invert(51%) sepia(86%) saturate(826%) hue-rotate(348deg) brightness(100%) contrast(93%);
+  }
+}

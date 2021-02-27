@@ -2,15 +2,19 @@
   background-color: $color-black;
   font-family: $paragraph-font;
   color: $color-grey;
-  position: fixed;
-  height: 100vh;
-  float: left;
+  max-height: 100%;
   padding-left: 0;
+  position: fixed;
+  float: left;
+  top: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
 }
 
 .sidebar-logo {
   padding: 10px;
+
 
   h1 {
     font-family: $logo-font;
