@@ -1,6 +1,14 @@
 .main-content {
   background-color: $color-white;
-  border: 20px solid $background-color;
-  padding-bottom: 30px;
+  border-left: 20px solid $background-color;
+  border-right: 20px solid $background-color;
+  z-index: 1;
+
+  &:last-of-type {
+    border-bottom: 20px solid $background-color;
+  }
 }
 
+.inner-content {
+  padding: 30px 140px;
+}

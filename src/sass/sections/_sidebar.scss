@@ -2,19 +2,15 @@
   background-color: $color-black;
   font-family: $paragraph-font;
   color: $color-grey;
-  max-height: 100%;
-  padding-left: 0;
-  position: fixed;
-  float: left;
   top: 0;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  z-index: 3;
+  position: fixed;
+  width: 200px;
 }
 
 .sidebar-logo {
   padding: 10px;
-
 
   h1 {
     font-family: $logo-font;
@@ -90,7 +86,7 @@
       align-items: center;
       padding-left: 15px;
 
-      img {
+      .profile-photo {
         height: 42px;
         width: 42px;
         object-fit: cover;

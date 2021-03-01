@@ -1,17 +1,11 @@
-.button-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+table {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
-.links {
-  padding: 30px 100px 0px 100px;
-}
-
-.single-link {
+tr {
   display: inline-block;
-  align-items: center;
-  width: 540px;
   border-bottom: 1px solid $color-light-grey;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -24,46 +18,58 @@
     background-color: $background-color;
   }
 
-  h4 {
+  th {
+    text-align: left;
+
+    &:nth-child(1){
+      width: 250px;
+    }
+
+    &:nth-child(2){
+      width: 300px;
+    }
+
+    &:nth-child(n+3){
+      width: 40px;
+    }
+  }
+
+  .title {
     font-family: $paragraph-font;
     font-size: 16px;
     font-weight: 500;
     color: $color-grey;
-    float: left;
     margin: 0 auto;
-    width: 200px;
     padding-left: 15px;
   }
 
-  .website {
+  .link {
     font-family: $paragraph-font;
     font-size: 16px;
     font-weight: 100;
     color: $color-blue;
     text-decoration: none;
-    width: 270px;
-    float: left;
 
     &:hover {
       font-weight: 300;
     }
   }
 
-  a {
-    width: 30px;
-    float: left;
-  }
-
   .icon {
+    filter: invert(76%) sepia(0%) saturate(0%) hue-rotate(217deg) brightness(81%) contrast(82%);
+
+    &:hover {
+      filter: invert(51%) sepia(86%) saturate(826%) hue-rotate(348deg) brightness(100%) contrast(93%);
+    }
+  }
+
+  .icon-links {
+    height: 8px;
+    width: 16px;
+  }
+
+  .icon-trash {
     height: 15px;
-    width: 15px;
-  }
-
-  .icon-links:hover {
-    filter: invert(51%) sepia(86%) saturate(826%) hue-rotate(348deg) brightness(100%) contrast(93%);
-  }
-
-  .icon-trash:hover {
-    filter: invert(51%) sepia(86%) saturate(826%) hue-rotate(348deg) brightness(100%) contrast(93%);
+    width: 13px;
   }
 }
