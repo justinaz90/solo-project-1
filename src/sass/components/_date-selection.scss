@@ -34,3 +34,28 @@
     opacity: 0.5;
   }
 }
+
+@media (max-width: 575px) {
+  .date-selection {
+    padding: 17px;
+
+    .dates input {
+      font-size: 10px;
+      padding: 3px;
+      margin: 3px;
+      width: 100px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .date-selection {
+    padding: 17px;
+
+    .dates input {
+      font-size: 10px;
+      padding: 3px;
+      margin: 3px;
+    }
+  }
+}

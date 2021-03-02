@@ -17,7 +17,7 @@ tr {
     background-color: $background-color;
   }
 
-  th {
+  td {
     text-align: left;
 
     &:nth-child(1){
@@ -72,3 +72,43 @@ tr {
     width: 13px;
   }
 }
+
+@media (max-width: 575px) {
+  table {
+    tr {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    .title, .link {
+      font-size: 10px;
+    }
+
+    .icon-links {
+      height: 7px;
+      width: 12px;
+    }
+
+    .icon-trash {
+      height: 11px;
+      width: 10px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  table {
+    padding: 20px;
+    margin: 0 auto;
+
+    tr {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .title, .link {
+      font-size: 14px;
+    }
+  }
+}
+

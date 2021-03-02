@@ -23,3 +23,10 @@
 .dot-green {
   background-color: $color-dark-green;
 }
+
+@media (max-width: 767px) {
+  .dot-chart {
+    height: 12px;
+    width: 12px;
+  }
+}

@@ -37,8 +37,31 @@ h4 {
 }
 
 .chart img {
-  object-fit: cover;
   display: flex;
   margin: 0 auto;
+  width: 80%;
+  height: auto;
 }
 
+@media (max-width: 767px) {
+  .earnings {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+
+  .legend {
+    margin: 20px auto;
+
+    .legend-option {
+      font-size: 14px;
+      padding: 10px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .earnings {
+    padding-left: 30px;
+  }
+}

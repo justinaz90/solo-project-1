@@ -71,5 +71,10 @@
 @media (max-width: 767px) {
   .top-bar {
     visibility: hidden;
+    position: sticky;
+
+    .top-bar-options {
+      margin-bottom: 0px;
+    }
   }
 }

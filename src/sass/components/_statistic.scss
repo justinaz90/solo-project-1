@@ -25,3 +25,13 @@
   }
 }
 
+@media (max-width: 991px) {
+  .stats-row {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    h4, p {
+      font-size: 12px;
+    }
+  }
+}

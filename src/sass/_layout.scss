@@ -13,3 +13,11 @@ body {
   padding-left: 200px;
   padding-top: 60px;
 }
+
+@media (max-width: 767px) {
+  .main {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 25px;
+  }
+}
