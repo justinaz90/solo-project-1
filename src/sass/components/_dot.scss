@@ -11,22 +11,3 @@
   border-radius: 50%;
   display: inline-block;
 }
-
-.dot-orange {
-  background-color: $color-dark-orange;
-}
-
-.dot-blue {
-  background-color: $color-light-blue;
-}
-
-.dot-green {
-  background-color: $color-dark-green;
-}
-
-@media (max-width: 767px) {
-  .dot-chart {
-    height: 12px;
-    width: 12px;
-  }
-}

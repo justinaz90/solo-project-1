@@ -73,6 +73,17 @@ tr {
   }
 }
 
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+}
+
 @media (max-width: 575px) {
   table {
     tr {
@@ -111,4 +122,3 @@ tr {
     }
   }
 }
-
