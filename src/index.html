@@ -18,14 +18,14 @@
       <a href="#"><i class="fas fa-bars hamburger"></i></a>
     </div>
     <div class="sidebar-menu">
-      <ul class="sidebar-menu-list">
-        <li><a href="#"><img class="icon icon-sidebar" src="images/icons/general.svg" alt="icon-general">General</a></li>
-        <li><a href="#"><img class="icon icon-sidebar" src="images/icons/details.svg" alt="icon-details">Details</a></li>
-        <li><a href="#"><img class="icon icon-sidebar" src="images/icons/links.svg" alt="icon-links">Links</a></li>
-        <li><a href="#"><img class="icon icon-sidebar" src="images/icons/banners.svg" alt="icon-banners">Banners</a></li>
-        <li><a href="#"><img class="icon icon-sidebar" src="images/icons/personaldata.svg" alt="icon-personaldata">Personal data</a></li>
-        <li><a href="#"><img class="icon icon-sidebar" src="images/icons/payout.svg" alt="icon-payout">Payout</a></li>
-        <li><a href="#"><img class="icon icon-sidebar" src="images/icons/postback.svg" alt="icon-postback">Postback</a></li>
+      <ul class="sidebar-list">
+        <li><a href="#general" class="list-item active"><img class="icon icon-sidebar" src="images/icons/general.svg" alt="icon-general">General</a></li>
+        <li><a href="#details" class="list-item"><img class="icon icon-sidebar" src="images/icons/details.svg" alt="icon-details">Details</a></li>
+        <li><a href="#links" class="list-item"><img class="icon icon-sidebar" src="images/icons/links.svg" alt="icon-links">Links</a></li>
+        <li><a href="#banners" class="list-item"><img class="icon icon-sidebar" src="images/icons/banners.svg" alt="icon-banners">Banners</a></li>
+        <li><a href="#personaldata" class="list-item"><img class="icon icon-sidebar" src="images/icons/personaldata.svg" alt="icon-personaldata">Personal data</a></li>
+        <li><a href="#payout" class="list-item"><img class="icon icon-sidebar" src="images/icons/payout.svg" alt="icon-payout">Payout</a></li>
+        <li><a href="#postback" class="list-item"><img class="icon icon-sidebar" src="images/icons/postback.svg" alt="icon-postback">Postback</a></li>
       </ul>
 
       <div class="manager">
@@ -76,139 +76,228 @@
     </ul>
   </div>
 
-  <div class="main">
-    <div class="main-content">
-      <div class="section-title">
-        <h3>GENERAL STATISTIC</h3>
-      </div>
+  <div class="pages">
+    <section id="general" class="page active">
+      <div class="main">
+        <div class="main-content">
+          <div class="section-title">
+            <h3>GENERAL STATISTIC</h3>
+          </div>
 
-      <div class="date-selection">
-        <div class="dates">
-          <input type="date" class="start-date">
-          <input type="date" class="end-date">
-        </div>
-        <a href="#" class="btn btn-refresh"><img src="images/icons/refresh.svg" alt="icon-refresh"></a>
-      </div>
+          <div class="date-selection">
+            <div class="dates">
+              <input type="date" class="start-date">
+              <input type="date" class="end-date">
+            </div>
+            <a href="#" class="btn btn-refresh"><img src="images/icons/refresh.svg" alt="icon-refresh"></a>
+          </div>
 
-      <div class="inner-content">
-        <div class="stats-row row">
-          <div class="col-12 col-lg-6">
-            <div class="stats">
-              <h4>Visit Signups</h4>
-              <p class="number">124</p>
+          <div class="inner-content">
+            <div class="stats-row row">
+              <div class="col-12 col-lg-6">
+                <div class="stats">
+                  <h4>Visit Signups</h4>
+                  <p class="number">124</p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="stats">
+                  <h4>Net deposit</h4>
+                  <p class="number">564</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="stats-row row">
+              <div class="col-12 col-lg-6">
+                <div class="stats">
+                  <h4>FTD</h4>
+                  <p class="number">445</p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="stats">
+                  <h4>Turn over</h4>
+                  <p class="number">432</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6">
-            <div class="stats">
-              <h4>Net deposit</h4>
-              <p class="number">564</p>
+
+          <div class="inner-content">
+            <h4 class="earnings">Earnings chart</h4>
+            <div class="chart">
+              <canvas id="myChart"></canvas>
             </div>
           </div>
         </div>
 
-        <div class="stats-row row">
-          <div class="col-12 col-lg-6">
-            <div class="stats">
-              <h4>FTD</h4>
-              <p class="number">445</p>
+
+        <div class="main-content">
+          <div class="section-title">
+            <h3>LINKS</h3>
+          </div>
+          <div class="inner-content">
+            <div class="btn-links">
+              <a href="#" class="btn btn-add-new">+ add new</a>
+            </div>
+            <div class="scroll-wrapper">
+              <table class="table-links">
+                <tr>
+                  <td class="title">Home page</td>
+                  <td><a href="#" class="link">http://www.homepage.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Currently offer</td>
+                  <td><a href="#" class="link">http://www.currently.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Blurpix</td>
+                  <td><a href="#" class="link">http://www.blurpix.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Your site</td>
+                  <td><a href="#" class="link">http://www.yoursite.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Google</td>
+                  <td><a href="#" class="link">http://www.google.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Facebook</td>
+                  <td><a href="#" class="link">http://www.facebook.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Dashboard</td>
+                  <td><a href="#" class="link">http://www.dashboard.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Blurax</td>
+                  <td><a href="#" class="link">http://www.blurax.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Piece of Wine</td>
+                  <td><a href="#" class="link">http://www.pieceofwine.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Twitter</td>
+                  <td><a href="#" class="link">http://www.twitter.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="btn-links">
+              <a href="#" class="btn btn-add-new">+ add new</a>
             </div>
           </div>
-          <div class="col-12 col-lg-6">
-            <div class="stats">
-              <h4>Turn over</h4>
-              <p class="number">432</p>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="pages">
+    <section id="links" class="page">
+      <div class="main">
+        <div class="main-content">
+          <div class="section-title">
+            <h3>LINKS</h3>
+          </div>
+          <div class="inner-content">
+            <div class="btn-links">
+              <a href="#" class="btn btn-add-new">+ add new</a>
+            </div>
+            <div class="scroll-wrapper">
+              <table class="table-links">
+                <tr>
+                  <td class="title">Home page</td>
+                  <td><a href="#" class="link">http://www.homepage.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Currently offer</td>
+                  <td><a href="#" class="link">http://www.currently.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Blurpix</td>
+                  <td><a href="#" class="link">http://www.blurpix.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Your site</td>
+                  <td><a href="#" class="link">http://www.yoursite.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Google</td>
+                  <td><a href="#" class="link">http://www.google.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Facebook</td>
+                  <td><a href="#" class="link">http://www.facebook.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Dashboard</td>
+                  <td><a href="#" class="link">http://www.dashboard.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Blurax</td>
+                  <td><a href="#" class="link">http://www.blurax.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Piece of Wine</td>
+                  <td><a href="#" class="link">http://www.pieceofwine.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+                <tr>
+                  <td class="title">Twitter</td>
+                  <td><a href="#" class="link">http://www.twitter.com</a></td>
+                  <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
+                  <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="btn-links">
+              <a href="#" class="btn btn-add-new">+ add new</a>
             </div>
           </div>
+
         </div>
       </div>
-
-      <div class="inner-content">
-        <h4 class="earnings">Earnings chart</h4>
-        <div class="chart">
-          <canvas id="myChart"></canvas>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="main-content">
-      <div class="section-title">
-        <h3>LINKS</h3>
-      </div>
-      <div class="inner-content">
-        <div class="btn-links">
-          <a href="#" class="btn btn-add-new">+ add new</a>
-        </div>
-        <div class="scroll-wrapper">
-          <table class="table-links">
-            <tr>
-              <td class="title">Home page</td>
-              <td><a href="#" class="link">http://www.homepage.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-            <tr>
-              <td class="title">Currently offer</td>
-              <td><a href="#" class="link">http://www.currently.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-            <tr>
-              <td class="title">Blurpix</td>
-              <td><a href="#" class="link">http://www.blurpix.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-            <tr>
-              <td class="title">Your site</td>
-              <td><a href="#" class="link">http://www.yoursite.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-            <tr>
-              <td class="title">Google</td>
-              <td><a href="#" class="link">http://www.google.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-            <tr>
-              <td class="title">Facebook</td>
-              <td><a href="#" class="link">http://www.facebook.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-            <tr>
-              <td class="title">Dashboard</td>
-              <td><a href="#" class="link">http://www.dashboard.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-            <tr>
-              <td class="title">Blurax</td>
-              <td><a href="#" class="link">http://www.blurax.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-            <tr>
-              <td class="title">Piece of Wine</td>
-              <td><a href="#" class="link">http://www.pieceofwine.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-            <tr>
-              <td class="title">Twitter</td>
-              <td><a href="#" class="link">http://www.twitter.com</a></td>
-              <td><a href="#"><img class="icon icon-links" src="images/icons/links.svg" alt="icon-links"></a></td>
-              <td><a href="#"><img class="icon icon-trash" src="images/icons/trash.svg" alt="icon-trash"></a></td>
-            </tr>
-          </table>
-        </div>
-        <div class="btn-links">
-          <a href="#" class="btn btn-add-new">+ add new</a>
-        </div>
-      </div>
-
-    </div>
+    </section>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>

@@ -1,3 +1,11 @@
+.page {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 .main-content {
   background-color: $color-white;
   border-left: 20px solid $background-color;

@@ -2,6 +2,8 @@
 /* eslint-disable no-undef */
 
 {
+  'use strict';
+
   /* Sidebar */
 
   function toggleMenu(visible) {
@@ -66,4 +68,50 @@
   }
 
   initChart();
+
+
+  /* Active pages */
+
+  const titleClickHandler = function(event){
+    event.preventDefault();
+    const clickedElement = this;
+
+    console.log('Link was clicked!');
+    console.log(event);
+
+    /* remove class 'active' from all sidebar links  */
+    const activeLinks = document.querySelectorAll('.sidebar-list a.active');
+
+    for(let activeLink of activeLinks){
+      activeLink.classList.remove('active');
+    }
+
+    /* add class 'active' to the clicked link */
+    clickedElement.classList.add('active');
+    console.log('clickedElement:', clickedElement);
+
+    /* remove class 'active' from all sections */
+    const activeSections = document.querySelectorAll('.pages section.active');
+
+    for(let activeSection of activeSections){
+      activeSection.classList.remove('active');
+    }
+
+    /* get 'href' attribute from the clicked link */
+    const sectionSelector = clickedElement.getAttribute('href');
+    console.log(sectionSelector);
+
+    /* find the correct section using the selector (value of 'href' attribute) */
+    const targetSection = document.querySelector(sectionSelector);
+    console.log(targetSection);
+
+    /* add class 'active' to the correct section*/
+    targetSection.classList.add('active');
+  };
+
+  const links = document.querySelectorAll('.sidebar-list a');
+
+  for(let link of links){
+    link.addEventListener('click', titleClickHandler);
+  }
 }
