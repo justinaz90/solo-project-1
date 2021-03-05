@@ -10,6 +10,21 @@
 </head>
 <body>
 
+  <!-- Modals -->
+
+  <div class="overlay" id="overlay">
+    <!-- Tutaj będą nasze modale -->
+    <div class="modal" id="quit">
+      <div class="btn-close js--close-modal">x</div>
+
+      <h4>Witaj w modalu!</h4>
+      <p>Lorem ipsum dolor sit amet...</p>
+
+      <button class="js--close-modal">Okay</button>
+    </div>
+
+  </div>
+
   <!-- Sidebar -->
 
   <div class="sidebar">
@@ -52,7 +67,7 @@
           <a href="#" class="user-profile"><img class="icon icon-top-bar profile" src="images/icons/profile.svg" alt="icon-profile">Leonardo Dicaprio</a>
         </li>
         <li>
-          <a href="#"><img class="icon icon-top-bar quit" src="images/icons/quit.svg" alt="icon-quit"></a>
+          <a href="#quit" ng-click="openModal();" class="js--open-modal"><img class="icon icon-top-bar quit" src="images/icons/quit.svg" alt="icon-quit"></a>
         </li>
       </ul>
     </div>
@@ -71,7 +86,7 @@
         <a href="#" class="user-profile"><img class="icon icon-top-bar profile" src="images/icons/profile.svg" alt="icon-profile">Leonardo Dicaprio</a>
       </li>
       <li>
-        <a href="#"><img class="icon icon-top-bar quit" src="images/icons/quit.svg" alt="icon-quit"></a>
+        <a href="#quit" ng-click="openModal();" class="js--open-modal"><img class="icon icon-top-bar quit" src="images/icons/quit.svg" alt="icon-quit"></a>
       </li>
     </ul>
   </div>
@@ -131,7 +146,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="main-content">
           <div class="section-title">
@@ -213,9 +227,17 @@
         </div>
       </div>
     </section>
-  </div>
 
-  <div class="pages">
+    <section id="details" class="page">
+      <div class="main">
+        <div class="main-content">
+          <div class="section-title">
+            <h3>DETAILS</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="links" class="page">
       <div class="main">
         <div class="main-content">
@@ -295,6 +317,46 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section id="banners" class="page">
+      <div class="main">
+        <div class="main-content">
+          <div class="section-title">
+            <h3>BANNERS</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="personaldata" class="page">
+      <div class="main">
+        <div class="main-content">
+          <div class="section-title">
+            <h3>PERSONAL DATA</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="payout" class="page">
+      <div class="main">
+        <div class="main-content">
+          <div class="section-title">
+            <h3>PAYOUT</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="postback" class="page">
+      <div class="main">
+        <div class="main-content">
+          <div class="section-title">
+            <h3>POSTBACK</h3>
+          </div>
         </div>
       </div>
     </section>
