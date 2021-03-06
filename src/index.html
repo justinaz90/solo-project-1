@@ -14,6 +14,15 @@
 
   <div class="overlay" id="overlay">
     <!-- Tutaj będą nasze modale -->
+    <div class="modal" id="user-profile">
+      <div class="btn-close js--close-modal">x</div>
+
+      <h4>Twoje konto uzytkownika</h4>
+      <p>Lorem ipsum dolor sit amet...</p>
+
+      <button class="js--close-modal">Okay</button>
+    </div>
+
     <div class="modal" id="quit">
       <div class="btn-close js--close-modal">x</div>
 
@@ -64,10 +73,10 @@
           <span class="dot-activity dot-orange"></span></a>
         </li>
         <li>
-          <a href="#" class="user-profile"><img class="icon icon-top-bar profile" src="images/icons/profile.svg" alt="icon-profile">Leonardo Dicaprio</a>
+          <a href="#user-profile" class="user-profile js--open-modal"><img class="icon icon-top-bar profile" src="images/icons/profile.svg" alt="icon-profile">Leonardo Dicaprio</a>
         </li>
         <li>
-          <a href="#quit" ng-click="openModal();" class="js--open-modal"><img class="icon icon-top-bar quit" src="images/icons/quit.svg" alt="icon-quit"></a>
+          <a href="#quit" class="js--open-modal"><img class="icon icon-top-bar quit" src="images/icons/quit.svg" alt="icon-quit"></a>
         </li>
       </ul>
     </div>
@@ -83,10 +92,10 @@
         <span class="dot-activity dot-orange"></span></a>
       </li>
       <li>
-        <a href="#" class="user-profile"><img class="icon icon-top-bar profile" src="images/icons/profile.svg" alt="icon-profile">Leonardo Dicaprio</a>
+        <a href="#user-profile" class="user-profile js--open-modal"><img class="icon icon-top-bar profile" src="images/icons/profile.svg" alt="icon-profile">Leonardo Dicaprio</a>
       </li>
       <li>
-        <a href="#quit" ng-click="openModal();" class="js--open-modal"><img class="icon icon-top-bar quit" src="images/icons/quit.svg" alt="icon-quit"></a>
+        <a href="#quit" class="js--open-modal"><img class="icon icon-top-bar quit" src="images/icons/quit.svg" alt="icon-quit"></a>
       </li>
     </ul>
   </div>

@@ -118,9 +118,23 @@
 
   /* Modals */
 
-  function closeModal() {
+  /* Close modal */
+
+  const closeModal = function() {
     document.getElementById('overlay').classList.remove('show');
-  }
+
+    const activeModals = document.querySelectorAll('.overlay .show');
+
+    for(let activeModal of activeModals){
+      activeModal.classList.remove('show');
+    }
+
+    const modals = document.querySelectorAll('.js--open-modal');
+
+    for(let modal of modals){
+      modal.classList.remove('show');
+    }
+  };
 
   document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
     btn.addEventListener('click', function(e) {
@@ -142,13 +156,40 @@
   });
 
 
-  function openModal(modal) {
-    document.querySelectorAll('#overlay > *').forEach(function(modal) {
-      modal.classList.remove('show');
-    });
-    document.querySelector('#overlay').classList.add('show');
-    document.querySelector(modal).classList.add('show');
-  }
+  /* Open modal */
 
-  //openModal('#quit');
+  const openModal = function(event) {
+    event.preventDefault();
+    const clickedElement = this;
+
+    /* remove class 'show' from all overlays */
+    const activeModals = document.querySelectorAll('.overlay .show');
+
+    for(let activeModal of activeModals){
+      activeModal.classList.remove('show');
+    }
+
+    /* add class 'show' to the clicked link and overlay */
+    clickedElement.classList.add('show');
+    console.log('clickedElement:', clickedElement);
+
+    document.querySelector('#overlay').classList.add('show');
+
+    /* get 'href' attribute from the clicked link */
+    const modalSelector = clickedElement.getAttribute('href');
+    console.log(modalSelector);
+
+    /* find the correct modal using the selector (value of 'href' attribute) */
+    const targetModal = document.querySelector(modalSelector);
+    console.log(targetModal);
+
+    /* add class 'show' to the correct modal */
+    targetModal.classList.add('show');
+  };
+
+  const modals = document.querySelectorAll('.js--open-modal');
+
+  for(let modal of modals){
+    modal.addEventListener('click', openModal);
+  }
 }
