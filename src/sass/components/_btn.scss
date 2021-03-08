@@ -1,5 +1,6 @@
 .btn {
   height: 40px;
+  border: none;
   border-radius: 3px;
   background-color: $color-dark-orange;
   padding: 10px;
@@ -7,6 +8,11 @@
   align-items: center;
   justify-content: center;
   margin-left: 15px;
+  font-family: $paragraph-font;
+  color: $color-white;
+  font-size: 18px;
+  font-weight: 100;
+  text-decoration: none;
 
   &:hover {
     background-color: $color-orange;
@@ -24,11 +30,6 @@
 
 .btn-add-new {
   width: 126px;
-  font-size: 18px;
-  font-family: $paragraph-font;
-  font-weight: 100;
-  text-decoration: none;
-  color: $color-white;
 }
 
 .btn-links {
@@ -36,6 +37,31 @@
   justify-content: center;
 }
 
+.btn-cancel {
+  background: $color-grey;
+  width: 90px;
+  font-weight: 300;
+
+  &:hover {
+    background-color: $color-dark-grey;
+  }
+}
+
+.btn-quit {
+  width: 90px;
+  font-weight: 300;
+}
+
+.btn-close {
+  color: $color-grey;
+  font-family: $paragraph-font;
+}
+
+.btn-enter {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 0;
+}
 
 @media (max-width: 767px) {
   .btn-refresh {

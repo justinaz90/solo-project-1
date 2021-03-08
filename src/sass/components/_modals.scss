@@ -7,17 +7,13 @@
   top: 0;
   left: 0;
   z-index: 9999;
-
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
-
   justify-content: center;
   align-items: center;
-
   overflow: auto;
   padding: 30px;
-
   display: none;
 }
 
@@ -30,8 +26,66 @@
   margin: auto;
   background-color: #ffffff;
   position: relative;
-  padding: 30px;
   display: none;
+
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  h4 {
+    text-align: left;
+    border-bottom: $color-light-grey 1px solid;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 80px;
+  }
+}
+
+.modal-user-profile {
+  h4 {
+    padding-left: 15px;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    padding-top: 10px;
+
+    .field {
+      padding-right: 15px;
+      border: $color-light-grey 1px solid;
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+
+      input {
+        height: 40px;
+        border: none;
+        font-family: $paragraph-font;
+        font-size: 13px;
+        padding-left: 10px;
+        outline: none;
+      }
+
+      .icon-login, .icon-password {
+        font-size: 15px;
+        color: $color-grey;
+        padding-left: 15px;
+        padding-right: 5px;
+      }
+
+      ::placeholder {
+        color: $color-grey;
+      }
+    }
+  }
 }
 
 .modal.show {

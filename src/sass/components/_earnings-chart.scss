@@ -5,63 +5,15 @@ h4 {
   color: $color-grey;
 }
 
-.legend {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 40px auto;
-
-  .legend-option {
-    padding: 15px;
-    margin-left: 30px;
-    font-family: $paragraph-font;
-    font-size: 16px;
-    font-weight: 100;
-    color: $color-blue;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
-
-    span {
-      margin-right: 10px;
-    }
-
-    &:hover {
-      background-color: $background-color;
-      cursor: pointer;
-      border-radius: 3px;
-      color: $color-grey;
-    }
-  }
-}
-
-.chart img {
-  display: flex;
-  margin: 0 auto;
-  width: 80%;
-  height: auto;
-}
-
 @media (max-width: 767px) {
-  .earnings {
+  h4 {
     padding-left: 30px;
     font-size: 14px;
-  }
-
-  .legend {
-    margin: 20px auto;
-
-    .legend-option {
-      font-size: 14px;
-      padding: 10px;
-      margin-left: 15px;
-    }
   }
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-  .earnings {
+  h4 {
     padding-left: 30px;
   }
 }
