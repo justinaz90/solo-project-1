@@ -72,7 +72,7 @@
 
   /* Active pages */
 
-  const titleClickHandler = function(event){
+  const activatePage = function(event){
     event.preventDefault();
     const clickedElement = this;
 
@@ -112,7 +112,7 @@
   const links = document.querySelectorAll('.sidebar-list a');
 
   for(let link of links){
-    link.addEventListener('click', titleClickHandler);
+    link.addEventListener('click', activatePage);
   }
 
 
@@ -127,12 +127,6 @@
 
     for(let activeModal of activeModals){
       activeModal.classList.remove('show');
-    }
-
-    const modals = document.querySelectorAll('.js--open-modal');
-
-    for(let modal of modals){
-      modal.classList.remove('show');
     }
   };
 
@@ -161,13 +155,6 @@
   const openModal = function(event) {
     event.preventDefault();
     const clickedElement = this;
-
-    /* remove class 'show' from all overlays */
-    const activeModals = document.querySelectorAll('.overlay .show');
-
-    for(let activeModal of activeModals){
-      activeModal.classList.remove('show');
-    }
 
     /* add class 'show' to the clicked link and overlay */
     clickedElement.classList.add('show');

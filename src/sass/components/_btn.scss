@@ -16,9 +16,9 @@
 .btn-refresh {
   width: 40px;
 
-  img {
-    height: 15px;
-    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(120deg) brightness(105%) contrast(101%);
+  i {
+    color: $color-white;
+    font-size: 15px;
   }
 }
 
@@ -42,8 +42,8 @@
     width: 25px;
     height: 25px;
 
-    img {
-      height: 10px;
+    i {
+      font-size: 10px;
     }
   }
 

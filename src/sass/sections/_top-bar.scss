@@ -31,33 +31,36 @@
     }
 
     .icon-top-bar {
-      height: 17px;
-      filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+      font-size: 17px;
+      color: $color-grey;
     }
 
     a {
       font-size: 18px;
       text-decoration: none;
       color: $color-grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      .wallet, .profile {
+      .icon-wallet, .icon-profile {
         padding-right: 15px;
       }
 
-      .arrow-down {
-        height: 8px;
+      .icon-arrow-down {
+        font-size: 13px;
         padding-left: 15px;
       }
 
-      .quit {
-        height: 14px;
+      .icon-notification {
+        padding-left: 8px;
       }
     }
 
     .dot-activity {
       position: relative;
-      right: 12px;
-      bottom: 10px;
+      right: 8px;
+      bottom: 8px;
       height: 7px;
       width: 7px;
     }
