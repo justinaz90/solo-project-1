@@ -1,9 +1,9 @@
 .btn {
-  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
   border-radius: 3px;
   background-color: $color-dark-orange;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,8 @@
 }
 
 .btn-refresh {
-  width: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   i {
     color: $color-white;
@@ -29,7 +30,8 @@
 }
 
 .btn-add-new {
-  width: 126px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn-links {
@@ -39,7 +41,8 @@
 
 .btn-cancel {
   background: $color-grey;
-  width: 90px;
+  padding-left: 25px;
+  padding-right: 25px;
   font-weight: 300;
 
   &:hover {
@@ -48,7 +51,8 @@
 }
 
 .btn-quit {
-  width: 90px;
+  padding-left: 35px;
+  padding-right: 35px;
   font-weight: 300;
 }
 
@@ -65,8 +69,7 @@
 
 @media (max-width: 767px) {
   .btn-refresh {
-    width: 25px;
-    height: 25px;
+    padding: 7px 8px;
 
     i {
       font-size: 10px;
@@ -74,8 +77,8 @@
   }
 
   .btn-add-new {
-    width: 90px;
-    height: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
     font-size: 14px;
   }
 }
